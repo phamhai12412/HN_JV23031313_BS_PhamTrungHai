@@ -227,6 +227,9 @@ public class Main {
   int check=-1;
 
         for (int i = 0; i <listbook.length ; i++) {
+              if(listbook[i] == null ){
+                continue;
+            }
             if (listbook[i].getTensach().toLowerCase().contains(tukhoa.toLowerCase())
                     || listbook[i].getMota().toLowerCase().contains(tukhoa.toLowerCase())) {
                 System.out.println(listbook[i]);
